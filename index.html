@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main class contains two containers -->
+    <div class="main">
+      <div class="container" id="container1">
+        <h2>Container 1</h2>
+        <div class="imageDiv" draggable="true">
+          <!--div container contains img-->
+          <img src="PrinceImg.jpeg" alt="Image Not found" class="item" />
+
+        </div>
+        <div class="item" draggable="true">Prince Yadav</div>
+        <div class="item" draggable="true">Prayag Singh</div>
+        <div class="item" draggable="true">Atul Kumar</div>
+        <div class="item" draggable="true">Aakash Gupta</div>
+      </div>
+      <!-- second container in which we have to drop the item -->
+      <div class="container" id="container2">
+        <h2>Container 2</h2>
+      </div>
+    </div>
+    <!-- succes messege -->
+    <div class="success">
+      <p id="successMessage"></p>
+    </div>
+    <!-- reset button  -->
+    <div class="btn">
+      <button id="resetButton">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
